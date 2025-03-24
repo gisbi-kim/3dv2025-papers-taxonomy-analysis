@@ -68,71 +68,133 @@
     - "Invisible Stitch: Generating Smooth 3D Scenes with Depth Inpainting" (Poster 1-22)
 - 설명: 암묵적 표현(SDF, Neural Fields) 및 표면 기반 재구성에 초점을 둔 연구.
 
+---
+
 ## **2. 3D Object Detection and Segmentation (3D 객체 탐지 및 분할)**
 
 - 초점: 3D 공간에서의 객체 탐지, 분할, 인식 및 관련 응용.
+- 논문 수: 16개
+
+### **2-1. Object Detection and Pose Estimation (객체 탐지 및 자세 추정)**
+
+- 초점: 3D 객체 탐지와 6D 자세 추정.
 - 포함 논문:
     - "CatFree3D: Category-Agnostic 3D Object Detection With Diffusion" (Poster 3-01)
     - "GRIN: Zero-Shot Metric Depth with Pixel-Level Diffusion" (Poster 3-02)
-    - "An Object is Worth 64x64 Pixels: Generating 3D Object via Image Diffusion" (Poster 3-03)
+    - "GS-Pose: Generalizable Segmentation-Based 6D Object Pose Estimation With 3D Gaussian Splatting" (Poster 4-12)
+- 설명: 객체 탐지 및 자세 추정에 초점을 맞춘 연구, 특히 zero-shot 및 범용성 강조.
+
+### **2-2. Instance and Semantic Segmentation (인스턴스 및 의미론적 분할)**
+
+- 초점: 3D 객체의 인스턴스 또는 의미론적 분할.
+- 포함 논문:
     - "Betsu-Betsu: Separable 3D Reconstruction of Two Interacting Objects from Multiple Views" (Poster 5-05)
     - "Reason3D: Searching and Reasoning 3D Segmentation via Large Language Model" (Poster 5-06)
-    - "LSSInst: Improving Geometric Modeling in LSS-Based BEV Perception" (Poster 5-07)
     - "Vocabulary-Free 3D Instance Segmentation with Vision-Language Assistant" (Poster 5-08)
     - "SAMPro3D: Locating SAM Prompts in 3D for Zero-Shot Instance Segmentation" (Poster 5-10)
-    - "DreamBeast: Distilling 3D Fantastic Animals with Part-Aware Knowledge Transfer" (Poster 5-12)
     - "TTT-KD: Test-Time Training for 3D Semantic Segmentation through Knowledge Distillation" (Poster 5-14)
     - "ObjectCarver: Semi-automatic segmentation, reconstruction and separation of 3D objects" (Poster 5-17)
     - "UNIT: Unsupervised Online Instance Segmentation through Time" (Poster 5-18)
-    - "SPAFormer: Sequential 3D Part Assembly with Transformers" (Poster 5-19)
     - "ZeroPS: High-quality Cross-modal Knowledge Transfer for Zero-Shot 3D Part Segmentation" (Poster 5-20)
-    - "GS-Pose: Generalizable Segmentation-Based 6D Object Pose Estimation With 3D Gaussian Splatting" (Poster 4-12)
     - "Open-Vocabulary Semantic Part Segmentation of 3D Human" (Poster 6-21)
+- 설명: 객체의 세부 분할, 특히 zero-shot 및 언어 기반 접근법 포함.
+
+### **2-3. Specialized Applications (특화된 응용)**
+
+- 초점: 특정 도메인(예: 동물, BEV)에서의 탐지 및 분할.
+- 포함 논문:
+    - "An Object is Worth 64x64 Pixels: Generating 3D Object via Image Diffusion" (Poster 3-03)
+    - "LSSInst: Improving Geometric Modeling in LSS-Based BEV Perception" (Poster 5-07)
+    - "DreamBeast: Distilling 3D Fantastic Animals with Part-Aware Knowledge Transfer" (Poster 5-12)
+    - "SPAFormer: Sequential 3D Part Assembly with Transformers" (Poster 5-19)
+- 설명: 특정 응용 분야(예: 동물, 자율주행 BEV)에서의 탐지 및 분할 연구.
+
+---
 
 ## **3. Human Modeling and Animation (인간 모델링 및 애니메이션)**
 
 - 초점: 3D 인간 모델, 모션 합성, 아바타, 의상 재구성 및 애니메이션.
+- 논문 수: 27개
+
+### **3-1. Head and Facial Animation (머리 및 얼굴 애니메이션)**
+
+- 초점: 얼굴 아바타, 표정 합성, 헤드 모델링.
 - 포함 논문:
     - "HeadEvolver: Text to Head Avatars via Expressive and Attribute-Preserving Mesh Deformation" (Poster 6-01)
-    - "MeshUp: Multi-Target Mesh Deformation via Blended Score Distillation" (Poster 6-02)
+    - "HeadGAP: Few-Shot 3D Head Avatar via Generalizable Gaussian Priors" (Poster 4-07)
+    - "3DiFACE: Synthesizing and Editing Holistic 3D Facial Animation" (Poster 6-12)
+    - "GaussianStyle: Gaussian Head Avatar via StyleGAN" (Poster 4-18)
+    - "GaussianAvatar-Editor: Photorealistic Animatable Gaussian Head Avatar Editor" (Poster 4-23)
+    - "HeadCraft: Modeling High-Detail Shape Variations for Animated 3DMMs" (Poster 6-19)
+    - "Joker: Conditional 3D Head Synthesis With Extreme Facial Expressions" (Poster 6-22)
+- 설명: 얼굴 및 머리 아바타 생성과 애니메이션에 특화된 연구.
+
+### **3-2. Full-Body Modeling and Motion (전신 모델링 및 모션)**
+
+- 초점: 전신 인간 모델, 모션 합성, 상호작용.
+- 포함 논문:
     - "UniMotion: Unifying 3D Human Motion Synthesis and Understanding" (Poster 6-03)
     - "DressRecon: Freeform 4D Human Reconstruction from Monocular Video" (Poster 6-04)
-    - "Garment3DGen: 3D Garment Stylization and Texture Generation" (Poster 6-05)
     - "HMD^2: Environment-aware Motion Generation from Single Egocentric Head-Mounted Device" (Poster 6-06)
-    - "AG-MAE: Anatomically Guided Spatio-Temporal Masked Auto-Encoder for Online Hand Gesture Recognition" (Poster 6-07)
-    - "GarmentDreamer: 3DGS Guided Garment Synthesis with Diverse Geometry and Texture Details" (Poster 6-08)
     - "InterTrack: Tracking Human Object Interaction without Object Templates" (Poster 6-09)
     - "Interactive Humanoid: Online Full Body Human Motion Reaction Synthesis" (Poster 6-10)
-    - "TEDRA: Text-based Editing of Dynamic and Photoreal Actors" (Poster 6-11)
-    - "3DiFACE: Synthesizing and Editing Holistic 3D Facial Animation" (Poster 6-12)
     - "FORCE: Physics-aware Human-object Interaction" (Poster 6-13)
-    - "ViSkin: Physics-based Simulation of Virtual Skin on Personalized Avatars" (Poster 6-14)
     - "3D Whole-body Grasp Synthesis with Directional Controllability" (Poster 6-15)
     - "NeuHMR: Neural Rendering-Guided Human Motion Reconstruction" (Poster 6-16)
     - "DEGAS: Detailed Expressions on Full-body Gaussian Avatars" (Poster 6-17)
     - "Rig3DGS: Creating Controllable Portraits from Casual Monocular Videos" (Poster 6-18)
-    - "HeadCraft: Modeling High-Detail Shape Variations for Animated 3DMMs" (Poster 6-19)
     - "CameraHMR: Aligning People with Perspective" (Poster 6-20)
-    - "Joker: Conditional 3D Head Synthesis With Extreme Facial Expressions" (Poster 6-22)
     - "DeforHMR: Vision Transformer with Deformable Cross-Attention for 3D Human Mesh Recovery" (Poster 6-23)
-    - "HeadGAP: Few-Shot 3D Head Avatar via Generalizable Gaussian Priors" (Poster 4-07)
-    - "Gaussians-to-Life: Text-Driven Animation of 3D Gaussian Splatting Scenes" (Poster 4-08)
     - "Drivable 3D Gaussian Avatars" (Poster 4-10)
-    - "GaussianStyle: Gaussian Head Avatar via StyleGAN" (Poster 4-18)
-    - "GaussianAvatar-Editor: Photorealistic Animatable Gaussian Head Avatar Editor" (Poster 4-23)
+- 설명: 전신 모델링, 모션 합성, 물리적 상호작용 포함.
+
+### **3-3. Garments and Skin Simulation (의상 및 피부 시뮬레이션)**
+
+- 초점: 의상 생성, 피부 시뮬레이션, 텍스처 작업.
+- 포함 논문:
+    - "MeshUp: Multi-Target Mesh Deformation via Blended Score Distillation" (Poster 6-02)
+    - "Garment3DGen: 3D Garment Stylization and Texture Generation" (Poster 6-05)
+    - "GarmentDreamer: 3DGS Guided Garment Synthesis with Diverse Geometry and Texture Details" (Poster 6-08)
+    - "ViSkin: Physics-based Simulation of Virtual Skin on Personalized Avatars" (Poster 6-14)
+    - "Gaussians-to-Life: Text-Driven Animation of 3D Gaussian Splatting Scenes" (Poster 4-08)
+- 설명: 의상과 피부의 사실적 시뮬레이션 및 텍스처링 연구.
+
+### **3-4. Gesture and Interaction (제스처 및 상호작용)**
+
+- 초점: 손 제스처, 인간-객체 상호작용 모델링.
+- 포함 논문:
+    - "AG-MAE: Anatomically Guided Spatio-Temporal Masked Auto-Encoder for Online Hand Gesture Recognition" (Poster 6-07)
+    - "TEDRA: Text-based Editing of Dynamic and Photoreal Actors" (Poster 6-11)
+- 설명: 제스처 인식 및 동적 상호작용에 초점을 둔 연구.
+
+---
 
 ## **4. Generative Models and Text-to-3D (생성 모델 및 텍스트-3D 변환)**
 
 - 초점: 생성 모델(Diffusion 등) 및 텍스트 기반 3D 콘텐츠 생성.
+- 논문 수: 20개
+
+### **4-1. Text-Driven 3D Generation (텍스트 기반 3D 생성)**
+
+- 초점: 텍스트 입력을 활용한 3D 모델 생성.
 - 포함 논문:
     - "SceneMotifCoder: Example-driven Visual Program Learning for 3D Object Arrangements" (Poster 5-01)
     - "Ctrl-Room: Controllable Text-to-3D Room Meshes Generation with Layout Constraints" (Poster 3-04)
-    - "4D-Editor: Interactive Object-level Editing in Dynamic Neural Radiance Fields" (Poster 3-05)
     - "VividTalk: One-Shot Audio-Driven Talking Head Generation Based on 3D Hybrid Prior" (Poster 3-06)
-    - "FastGrasp: Efficient Grasp Synthesis with Diffusion" (Poster 3-08)
-    - "HoleGest: Decoupled Diffusion and Motion Priors for Generating Holisticly Expressive Co-speech Gestures" (Poster 3-09)
     - "Learning Naturally Aggregated Appearance for Efficient 3D Editing" (Poster 3-10)
     - "AutoVFX: Physically Realistic Video Editing from Natural Language Instructions" (Poster 3-11)
+    - "RealmDreamer: Text-Driven 3D Scene Generation with Inpainting and Depth Diffusion" (Poster 3-21)
+    - "Dream-in-Style: Text-to-3D Generation using Stylized Score Distillation" (Poster 3-24)
+    - "3D-GPT: Procedural 3D modeling with large language models" (Poster 5-13)
+    - "Controllable Text-to-3D Generation via Surface-Aligned Gaussian Splatting" (Poster 4-22)
+- 설명: 텍스트를 통해 3D 장면, 객체, 애니메이션을 생성하는 연구.
+
+### **4-2. Diffusion-Based Generative Models (Diffusion 기반 생성 모델)**
+
+- 초점: Diffusion 모델을 활용한 3D 생성 및 편집.
+- 포함 논문:
+    - "FastGrasp: Efficient Grasp Synthesis with Diffusion" (Poster 3-08)
+    - "HoleGest: Decoupled Diffusion and Motion Priors for Generating Holisticly Expressive Co-speech Gestures" (Poster 3-09)
     - "mmDiffusion: mmWave Diffusion for Sequential 3D Human Dense Point Cloud Generation" (Poster 3-12)
     - "JADE: Joint-aware Latent Diffusion for 3D Human Generative Modeling" (Poster 3-13)
     - "MaterialFusion: Enhancing Inverse Rendering with Material Diffusion Priors" (Poster 3-14)
@@ -140,34 +202,59 @@
     - "Reflecting Reality: Enabling Diffusion Models to Produce Faithful Mirror Reflections" (Poster 3-16)
     - "Denoising Monte Carlo Renders with Diffusion Models" (Poster 3-17)
     - "Geometry-guided Cross-view Diffusion for One-to-many Cross-view Image Synthesis" (Poster 3-20)
-    - "RealmDreamer: Text-Driven 3D Scene Generation with Inpainting and Depth Diffusion" (Poster 3-21)
     - "MotionDreamer: Exploring Semantic Video Diffusion features for Zero-Shot 3D Mesh Animation" (Poster 3-22)
-    - "Dream-in-Style: Text-to-3D Generation using Stylized Score Distillation" (Poster 3-24)
-    - "3D-GPT: Procedural 3D modeling with large language models" (Poster 5-13)
-    - "Controllable Text-to-3D Generation via Surface-Aligned Gaussian Splatting" (Poster 4-22)
+- 설명: Diffusion 모델을 활용한 다양한 3D 생성 및 렌더링 개선 연구.
 
-##  **5. Point Cloud Processing and Registration (포인트 클라우드 처리 및 정합)**
+### **4-3. Editing and Dynamic Generation (편집 및 동적 생성)**
+
+- 초점: 3D 모델의 동적 편집 및 실시간 생성.
+- 포함 논문:
+    - "4D-Editor: Interactive Object-level Editing in Dynamic Neural Radiance Fields" (Poster 3-05)
+- 설명: 동적 4D 편집에 초점을 둔 연구(논문 수가 적어 별도 분류로 유지).
+
+---
+
+## **5. Point Cloud Processing and Registration (포인트 클라우드 처리 및 정합)**
 
 - 초점: 포인트 클라우드 데이터 처리, 정합, 카메라 위치 추정 및 관련 기술.
+- 논문 수: 17개
+
+### **5-1. Point Cloud Registration and Correspondence (포인트 클라우드 정합 및 대응)**
+
+- 초점: 포인트 클라우드 간 정합 및 대응 찾기.
 - 포함 논문:
     - "MAC++: Going Further with Maximal Cliques for 3D Registration" (Poster 1-04)
     - "Robust Spectral Translation Synchronization" (Poster 1-05)
     - "CoE: Deep Coupled Embedding for Non-Rigid Point Cloud Correspondences" (Poster 1-06)
+    - "Fully-Geometric Cross-attention for Point Cloud Registration" (Poster 1-12)
+    - "Approximate 2D-3D Shape Matching for Interactive Applications" (Poster 1-19)
+    - "Geometric Correspondence Consistency in RGB-D Relative Pose Estimation" (Poster 1-23)
+- 설명: 포인트 클라우드 정합 및 대응 매핑에 초점을 둔 연구.
+
+### **5-2. Scene Flow and Dynamic Processing (장면 흐름 및 동적 처리)**
+
+- 초점: 포인트 클라우드의 동적 처리 및 흐름 분석.
+- 포함 논문:
     - "SSRFlow: Semantic-aware Fusion with Spatial Temporal Re-embedding for Real-world Scene Flow" (Poster 1-07)
     - "FOCUS - Multi-View Foot Reconstruction From Synthetically Trained Dense Correspondences" (Poster 1-08)
-    - "Fully-Geometric Cross-attention for Point Cloud Registration" (Poster 1-12)
+    - "DynOMo: Online Point Tracking by Dynamic Online Monocular Gaussian Reconstruction" (Poster 4-13)
+    - "MorphoSkel3D: Morphological Skeletonization of 3D Point Clouds for Informed Sampling" (Poster 5-22)
+- 설명: 동적 장면 흐름 및 시간적 처리에 중점을 둔 연구.
+
+### **5-3. Localization and Enhancement (위치 추정 및 개선)**
+
+- 초점: 카메라 위치 추정, 깊이 개선, 특화된 포인트 클라우드 처리.
+- 포함 논문:
     - "A2-GNN: Angle-Annular GNN for Visual Descriptor-free Camera Relocalization" (Poster 1-13)
     - "GVP: Generative Volumetric Primitives" (Poster 1-15)
     - "CFPNet: Improving Lightweight ToF Depth Completion via Cross-zone Feature Propagation" (Poster 1-17)
     - "U–ARE–ME: Uncertainty-Aware Rotation Estimation in Manhattan Environments" (Poster 1-18)
-    - "Approximate 2D-3D Shape Matching for Interactive Applications" (Poster 1-19)
-    - "Geometric Correspondence Consistency in RGB-D Relative Pose Estimation" (Poster 1-23)
-    - "Robustifying Point Cloud Networks by Refocusing" (Poster 5-04)
     - "VXP: Voxel-Cross-Pixel Large-Scale Camera-LiDAR Place Recognition" (Poster 5-11)
-    - "MorphoSkel3D: Morphological Skeletonization of 3D Point Clouds for Informed Sampling" (Poster 5-22)
+    - "Robustifying Point Cloud Networks by Refocusing" (Poster 5-04)
     - "Efficient Continuous Group Convolutions for Local SE(3) Equivariance in 3D Point Clouds" (Poster 5-24)
-    - "DynOMo: Online Point Tracking by Dynamic Online Monocular Gaussian Reconstruction" (Poster 4-13)
- 
+- 설명: 위치 추정, 깊이 완성, 포인트 클라우드 네트워크 개선 등 다양한 응용.
+
+---
 
 ## **6. Miscellaneous and Emerging Topics (기타 및 신흥 주제)**
 
