@@ -2,36 +2,40 @@
 
 ## **1. 3D Scene Reconstruction and Rendering (3D 장면 재구성 및 렌더링)**
 
-- 초점: 3D 장면, 환경, 객체의 재구성 및 사실적인 렌더링 기술(NeRF, Gaussian Splatting 등 포함).
+- 초점: 3D 장면, 환경, 객체의 재구성 및 사실적인 렌더링 기술.
+
+### **1-1. Structure-from-Motion and Multi-View Reconstruction (SfM 및 다중 뷰 재구성)**
+
+- 초점: 다중 이미지나 비디오를 활용한 3D 재구성, SfM 및 카메라 위치 추정 기반 기술.
 - 포함 논문:
     - "MASt3R-SfM: a Fully-Integrated Solution for Unconstrained Structure-from-Motion" (Poster 1-01)
     - "Geometry-Aware Feature Matching for Large-Scale Structure from Motion" (Poster 1-03)
-    - "αSurf: Implicit Surface Reconstruction for Semi-Transparent and Thin Objects with Decoupled Geometry and Opacity" (Poster 2-01)
-    - "Spurfies: Sparse-View Surface Reconstruction using Local Geometry Priors" (Poster 2-02)
-    - "3D Reconstruction with Spatial Memory" (Poster 2-03)
-    - "OpticFusion: Multi-Modal Neural Implicit 3D Reconstruction of Microstructures" (Poster 2-04)
+    - "FlowMap: High-Quality Camera Poses, Intrinsics, and Depth via Gradient Descent" (Poster 1-16)
+    - "Synthesizing Consistent Novel Views via 3D Epipolar Attention without Re-training" (Poster 1-11)
+    - "Oblique-MERF: Revisiting and Improving MERF for Oblique Photography" (Poster 1-10)
+- 설명: SfM, 카메라 위치 추정, 다중 뷰를 통한 정밀한 3D 재구성에 초점을 둔 연구.
+
+### **1-2. Neural Radiance Fields (NeRF) and Variants (NeRF 및 변형 기술)**
+
+- 초점: NeRF 기반의 신경망 렌더링 및 그 변형(속도 개선, 품질 향상 등).
+- 포함 논문:
+    - "MonoPatchNeRF: Improving Neural Radiance Fields with Patch-based Monocular Guidance" (Poster 2-05)
+    - "Plenoptic PNG: Real-Time Neural Radiance Fields in 150 KB" (Poster 2-07)
+    - "OD-NeRF: Efficient Training of On-the-Fly Dynamic Neural Radiance Fields" (Poster 2-09)
+    - "LSE-NeRF: Learning Sensor Modeling Errors for Deblured Neural Radiance Fields" (Poster 2-10)
+    - "MLI-NeRF: Multi-Light Intrinsic-Aware Neural Radiance Fields" (Poster 2-15)
+    - "FourieRF: Few-Shot NeRFs via Progressive Fourier Frequency Control" (Poster 2-17)
+    - "Direct and Explicit 3D Generation from a Single Image" (Poster 2-06)
+    - "UrbanIR: Large-Scale Urban Scene Inverse Rendering from a Single Video" (Poster 2-08)
+- 설명: NeRF를 기반으로 한 장면 렌더링, 특히 단일 이미지나 동적 장면에 대한 최적화 연구.
+
+### **1-3. Gaussian Splatting-Based Techniques (Gaussian Splatting 기반 기술)**
+
+- 초점: 3D Gaussian Splatting을 활용한 고속, 고품질 렌더링 및 재구성.
+- 포함 논문:
     - "RadSplat: Radiance Field-Informed Gaussian Splatting for Robust Real-Time Rendering" (Poster 4-01)
     - "A Large-scale Dataset of Gaussian Splats and Their Self-Supervised Pretraining" (Poster 4-02)
     - "LoopSplat: Loop Closure by Registering 3D Gaussian Splats" (Poster 4-03)
-    - "INPC: Implicit Neural Point Clouds for Radiance Field Rendering" (Poster 4-04)
-    - "MonoPatchNeRF: Improving Neural Radiance Fields with Patch-based Monocular Guidance" (Poster 2-05)
-    - "Direct and Explicit 3D Generation from a Single Image" (Poster 2-06)
-    - "Plenoptic PNG: Real-Time Neural Radiance Fields in 150 KB" (Poster 2-07)
-    - "UrbanIR: Large-Scale Urban Scene Inverse Rendering from a Single Video" (Poster 2-08)
-    - "OD-NeRF: Efficient Training of On-the-Fly Dynamic Neural Radiance Fields" (Poster 2-09)
-    - "LSE-NeRF: Learning Sensor Modeling Errors for Deblured Neural Radiance Fields" (Poster 2-10)
-    - "PIR: Photometric Inverse Rendering with Shading Cues Modeling" (Poster 2-11)
-    - "SurfR: Surface Reconstruction with Multi-scale Attention" (Poster 2-12)
-    - "NoKSR: Kernel-Free Neural Surface Reconstruction via Point Cloud Serialization" (Poster 2-13)
-    - "Lightplane: Highly-Scalable Components for Neural 3D Fields" (Poster 2-14)
-    - "MLI-NeRF: Multi-Light Intrinsic-Aware Neural Radiance Fields" (Poster 2-15)
-    - "RISE-SDF: Relightable Information-Shared Signed Distance Field for Glossy Object Inverse Rendering" (Poster 2-16)
-    - "FourieRF: Few-Shot NeRFs via Progressive Fourier Frequency Control" (Poster 2-17)
-    - "Gen3DSR: Generalizable 3D Scene Reconstruction via Divide and Conquer from a Single View" (Poster 2-18)
-    - "Particle Rendering: Implicitly Aggregating Incident and Outgoing Light Fields" (Poster 2-19)
-    - "Incorporating dense metric depth into neural 3D representations" (Poster 2-20)
-    - "CamCtrl3D: Single-Image Scene Exploration With Precise 3D Camera Control" (Poster 2-21)
-    - "Flash3D: Feed-Forward Generalisable 3D Scene Reconstruction from a Single Image" (Poster 2-23)
     - "E-3DGS: Event-Based Novel View Rendering of Large-Scale Scenes Using 3D Gaussian Splatting" (Poster 4-05)
     - "Mipmap-GS: Let Gaussians Deform with Scale-specific Mipmap for Anti-aliasing Rendering" (Poster 4-06)
     - "WaterSplatting: Fast Underwater 3D Scene Reconstruction using Gaussian Splatting" (Poster 4-09)
@@ -40,10 +44,29 @@
     - "360-GS: Layout-guided Panoramic Gaussian Splatting For Indoor Roaming" (Poster 4-16)
     - "AGS-Mesh: Adaptive Gaussian Splatting and Meshing with Geometric Priors" (Poster 4-19)
     - "EgoGaussian: Dynamic Scene Understanding from Egocentric Video with 3D Gaussian Splatting" (Poster 4-20)
+- 설명: Gaussian Splatting을 활용한 실시간 렌더링, 동적 장면 처리, 메싱 등 다양한 응용.
+
+### **1-4. Surface and Implicit Representation Methods (표면 및 암묵적 표현 방법)**
+
+- 초점: 표면 재구성, 암묵적 표현(Implicit Fields), 물체의 구조적 특성 활용.
+- 포함 논문:
+    - "αSurf: Implicit Surface Reconstruction for Semi-Transparent and Thin Objects with Decoupled Geometry and Opacity" (Poster 2-01)
+    - "Spurfies: Sparse-View Surface Reconstruction using Local Geometry Priors" (Poster 2-02)
+    - "3D Reconstruction with Spatial Memory" (Poster 2-03)
+    - "OpticFusion: Multi-Modal Neural Implicit 3D Reconstruction of Microstructures" (Poster 2-04)
+    - "INPC: Implicit Neural Point Clouds for Radiance Field Rendering" (Poster 4-04)
+    - "PIR: Photometric Inverse Rendering with Shading Cues Modeling and Surface Reflectance Regularization" (Poster 2-11)
+    - "SurfR: Surface Reconstruction with Multi-scale Attention" (Poster 2-12)
+    - "NoKSR: Kernel-Free Neural Surface Reconstruction via Point Cloud Serialization" (Poster 2-13)
+    - "Lightplane: Highly-Scalable Components for Neural 3D Fields" (Poster 2-14)
+    - "RISE-SDF: Relightable Information-Shared Signed Distance Field for Glossy Object Inverse Rendering" (Poster 2-16)
+    - "Gen3DSR: Generalizable 3D Scene Reconstruction via Divide and Conquer from a Single View" (Poster 2-18)
+    - "Particle Rendering: Implicitly Aggregating Incident and Outgoing Light Fields for Novel View Synthesis" (Poster 2-19)
+    - "Incorporating dense metric depth into neural 3D representations for view synthesis and relighting" (Poster 2-20)
+    - "CamCtrl3D: Single-Image Scene Exploration With Precise 3D Camera Control" (Poster 2-21)
+    - "Flash3D: Feed-Forward Generalisable 3D Scene Reconstruction from a Single Image" (Poster 2-23)
     - "Invisible Stitch: Generating Smooth 3D Scenes with Depth Inpainting" (Poster 1-22)
-    - "FlowMap: High-Quality Camera Poses, Intrinsics, and Depth via Gradient Descent" (Poster 1-16)
-    - "Oblique-MERF: Revisiting and Improving MERF for Oblique Photography" (Poster 1-10)
-    - "Synthesizing Consistent Novel Views via 3D Epipolar Attention without Re-training" (Poster 1-11)
+- 설명: 암묵적 표현(SDF, Neural Fields) 및 표면 기반 재구성에 초점을 둔 연구.
 
 ## **2. 3D Object Detection and Segmentation (3D 객체 탐지 및 분할)**
 
